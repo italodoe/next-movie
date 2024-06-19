@@ -10,7 +10,8 @@ type Movie = {
   overview: string;
   popularity: number;
   poster_path: string;
-  release_date: string;
+  release_date: string | Date;
+  release_date_date: Date;
   title: string;
   video: boolean;
   vote_average: number;
@@ -31,5 +32,9 @@ const tmdbFetch = async (path: string) => {
 
 export const getMoviesPopular = async () => {
   const { results: popular } = await tmdbFetch("movie/popular?language=en-US&page=1");
-  return popular as Movie[];
+  const movies = popular.map((result: Movie) => ({
+    ...result,
+    release_date: new Date(result.release_date),
+  }));
+  return movies as Movie[];
 };
