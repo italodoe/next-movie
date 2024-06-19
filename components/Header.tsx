@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header
-      className={cn(" items-center p-3 w-full   sticky top-0 bg-zinc-200")}
+      className={cn(" items-center p-3 w-full   sticky top-0  z-10 backdrop-blur-md bg-white/30 ")}
     >
       <div className="flex flex-row flex-no-wrap items-center  md:container m-auto justify-between gap-3">
         <Link href={"/"}>
@@ -20,7 +20,7 @@ export default function Header() {
           </Avatar>
         </Link>
         <div className=" w-40 lg:w-96 sm:gap-x-56 ">
-          <Input type="text" placeholder="search ...." />
+          <Input type="text" className="bg-zinc-200" placeholder="search ...." />
         </div>
         <div>
           <Button variant="outline" size={"icon"}>
