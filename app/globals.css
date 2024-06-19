@@ -68,9 +68,9 @@
   filter: brightness(1.25);
 }
 
-.card-image{
-  border-top-left-radius:1rem;
-  border-top-right-radius:1rem
+.card-image{   
+  border-top-left-radius:0.65rem;
+  border-top-right-radius:0.65rem;
 }
 .card-content{
   text-overflow: ellipsis;
