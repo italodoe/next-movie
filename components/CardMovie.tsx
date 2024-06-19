@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 export default function CardMovie(){
     return (
-        <Card className="bg-stone-900 text-destructive-foreground hover:bg-stone-800 cursor-pointer select-none">
+        <Card className="card-item bg-stone-900 text-destructive-foreground hover:bg-stone-800 cursor-pointer select-none">
           <Image
             className="card-image"
             src={"/banner.webp"}

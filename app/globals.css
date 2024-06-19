@@ -60,6 +60,14 @@
   }
 }
 
+.card-item{
+  transition: 200ms;
+
+}
+.card-item:hover{
+  filter: brightness(1.25);
+}
+
 .card-image{
   border-top-left-radius:1rem;
   border-top-right-radius:1rem
