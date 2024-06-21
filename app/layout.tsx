@@ -23,7 +23,8 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+      </head>
       <body className={cn(roboto.className, "flex flex-col")}>
         <Header></Header>
         
