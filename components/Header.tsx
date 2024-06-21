@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+
 import Link from "next/link";
+import SearchInput from "./SearchInput";
 
 export default function Header() {
   return (
@@ -20,8 +21,10 @@ export default function Header() {
           </Avatar>
         </Link>
         <div className=" w-40 lg:w-96 sm:gap-x-56 ">
-          <Input type="text" className="bg-zinc-200" placeholder="search ...." />
-        </div>
+
+        <SearchInput></SearchInput>
+        
+         </div>
         <div>
           <Button variant="outline" size={"icon"}>
             ES

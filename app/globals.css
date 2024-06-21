@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -50,7 +49,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -60,43 +58,50 @@
   }
 }
 
-.card-item{
+.card-item {
   transition: 200ms;
-
 }
-.card-item:hover{
+.card-item:hover {
   filter: brightness(1.25);
-  box-shadow: rgba(5, 26, 143, 0.22) 0px 2px 4px 0px, rgba(65, 10, 102, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(5, 26, 143, 0.22) 0px 2px 4px 0px,
+    rgba(65, 10, 102, 0.32) 0px 2px 16px 0px;
 }
-.card-image{   
-  border-top-left-radius:0.65rem;
-  border-top-right-radius:0.65rem;
+.card-image {
+  border-top-left-radius: 0.65rem;
+  border-top-right-radius: 0.65rem;
+  min-width: 320px;
+  min-height: 480px;
 }
-.card-content{
+.card-content {
   text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
-    font-size: .91rem;
+  font-size: 0.91rem;
 }
-.title-content{
+.title-content {
   text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
-    font-size: 1.291rem;
+  font-size: 1.291rem;
 }
 
-.card-link{
+.card-link {
   transition: 200ms;
-
 }
 
-.card-link:hover{
+.card-link:hover {
   transform: scale(1.03);
- 
+}
+
+.poster-image{
+  height: 700px!important;
+}
+.main-page{
+  min-height: calc(100vh - 64px);
 }
