@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 type CardMovieProps = {
   params: {
@@ -34,7 +35,8 @@ export default function CardMovie({ params }: CardMovieProps) {
   const image_path = `https://image.tmdb.org/t/p/${size}${poster_path}`;
   var dateOptions = { year: "numeric", month: "long", day: "numeric" };
   return (
-    <Card className="card-item bg-stone-900 text-destructive-foreground hover:bg-stone-800 cursor-pointer select-none">
+    <Link href="#" className="card-link">
+        <Card className="card-item bg-stone-900 text-destructive-foreground hover:bg-stone-800 cursor-pointer select-none">
       <Image
         className="card-image"
         src={image_path}
@@ -72,5 +74,7 @@ export default function CardMovie({ params }: CardMovieProps) {
         </div>
       </CardFooter>
     </Card>
+    </Link>
+
   );
 }

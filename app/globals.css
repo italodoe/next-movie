@@ -66,8 +66,8 @@
 }
 .card-item:hover{
   filter: brightness(1.25);
+  box-shadow: rgba(5, 26, 143, 0.22) 0px 2px 4px 0px, rgba(65, 10, 102, 0.32) 0px 2px 16px 0px;
 }
-
 .card-image{   
   border-top-left-radius:0.65rem;
   border-top-right-radius:0.65rem;
@@ -89,4 +89,14 @@
     overflow: hidden;
 
     font-size: 1.291rem;
+}
+
+.card-link{
+  transition: 200ms;
+
+}
+
+.card-link:hover{
+  transform: scale(1.03);
+ 
 }
