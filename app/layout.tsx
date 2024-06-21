@@ -25,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
       </head>
-      <body className={cn(roboto.className, "flex flex-col")}>
+      <body className={cn(roboto.className, "flex flex-col bg-slate-900")}>
         <Header></Header>
         
         <main className="main-page flex-1  md:container mx-auto pt-5">{children}</main>

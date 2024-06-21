@@ -71,6 +71,7 @@
   border-top-right-radius: 0.65rem;
   min-width: 320px;
   min-height: 480px;
+
 }
 .card-content {
   text-overflow: ellipsis;

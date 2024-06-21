@@ -13,7 +13,7 @@ const Home: FC<serverParams> = async ({ searchParams }: serverParams) => {
   } else movies = await actionGetPopular();
 
   return (
-    <div className="w-full h-hull">
+    <div className="w-full h-hull pb-10">
       <h1 className="text-center text-3xl font-semibold">Hey movies</h1>
       <div className="md:grid md:grid-cols-4 gap-4 pt-4 -scroll-mb-10">
         {<MovieList movies={movies}></MovieList>}
