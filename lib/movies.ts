@@ -20,6 +20,7 @@ export type Movie = {
 
 export type movieParams = {
   query: string;
+  page: number;
 };
 
 export type serverParams = {
